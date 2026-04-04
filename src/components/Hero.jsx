@@ -35,14 +35,14 @@ export default function Hero() {
       <div className="flex flex-col md:flex-row justify-between items-start gap-10">
         
         {/* LEFT SECTION */}
-        <div className="max-w-xl  ">
+        <div className="max-w-xl">
           <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
             Stake and Get{" "}
             <span className="text-[#4ade80]">stUSDT</span>
           </h1>
 
           <p className="text-gray-400 mt-4 text-sm leading-relaxed">
-            You can stake USDT to get the receipt token, stUSDT, by holding which you can receive rewards from RWA investment{" "} 
+            You can stake USDT to get the receipt token, stUSDT, by holding which you can receive rewards from RWA investment
             <br />
             <span className="text-[#4ade80] cursor-pointer hover:underline">
               Yields Data Disclosure &gt;
@@ -88,46 +88,38 @@ export default function Hero() {
         </div>
 
         {/* RIGHT SECTION (STATS) */}
-        <div className="grid grid-cols-2 gap-x-10 gap-y-6 text-left md:text-right">
+        <div className="grid grid-cols-2 sm:grid-cols-2 gap-4 md:gap-x-10 md:gap-y-6 w-full md:w-auto text-left md:text-right">
           
-          <div>
-            <p className="text-gray-400 text-sm flex items-center justify-end gap-70 mr-25">
-              Total Staked
-            </p>
-            <h2 className="text-2xl font-semibold mt-1">
-              $1,804,781
-            </h2>
+          {/* Total Staked */}
+          <div className="flex flex-col items-start md:items-end">
+            <p className="text-gray-400 text-sm">Total Staked</p>
+            <h2 className="text-2xl font-semibold mt-1">$1,804,781</h2>
           </div>
 
-          <div>
-            <p className="text-gray-400 text-sm flex items-center justify-end gap-1 mr-40">
-              APY
-            </p>
-            <h2 className="text-2xl font-semibold mt-1 ">
-              3.53%
-            </h2>
+          {/* APY */}
+          <div className="flex flex-col items-start md:items-end">
+            <p className="text-gray-400 text-sm">APY</p>
+            <h2 className="text-2xl font-semibold mt-1">3.53%</h2>
           </div>
 
-          <div>
-            <p className="text-gray-400 text-sm flex items-center justify-end gap-1 mr-17">
-              My stUSDT Balance
-            </p>
+          {/* My Balance */}
+          <div className="flex flex-col items-start md:items-end">
+            <p className="text-gray-400 text-sm">My stUSDT Balance</p>
             <div className="mt-1 text-lg">-</div>
-            <button className="mt-2 text-xs border border-gray-600 px-3 py-1 rounded hover:bg-gray-700 transition flex items-center gap-2">
-  <Wallet className="w-3 h-3" />
-  Please connect your wallet
-</button>
+            <button className="mt-2 text-xs border border-gray-600 px-2 py-1 rounded hover:bg-gray-700 transition flex items-center gap-2">
+              <Wallet className="w-3 h-3" />
+             Please Connect wallet
+            </button>
           </div>
 
-          <div>
-            <p className="text-gray-400 text-sm flex items-center justify-end gap-1 mr-29">
-              My Earnings
-            </p>
+          {/* My Earnings */}
+          <div className="flex flex-col items-start md:items-end">
+            <p className="text-gray-400 text-sm">My Earnings</p>
             <div className="mt-1 text-lg">-</div>
-            <button className="mt-2 text-xs border border-gray-600 px-3 py-1 rounded hover:bg-gray-700 transition flex items-center gap-2">
-  <Wallet className="w-3 h-3" />
-  Please connect your wallet
-</button>
+            <button className="mt-2 text-xs border border-gray-600 px-2 py-1 rounded hover:bg-gray-700 transition flex items-center gap-2">
+              <Wallet className="w-3 h-3" />
+              Please Connect wallet
+            </button>
           </div>
 
         </div>
